@@ -1,0 +1,172 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #00bceb;
+}
+
+/* -- Estilos para el Contenedor Principal (Tarjeta Blanca) -- */
+.contenedor-principal{
+    max-width: 50rem;
+    margin: 2.5rem auto;
+    background-color: white;
+    border-radius: 1.25rem;
+    padding: 2.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* -- Estilos para el encabezado -- */
+
+header{
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.estilo-logo{
+    width: 10rem;
+    height: 2.5rem;
+    margin: 2.5rem auto;
+    display: block;
+}
+
+/* -- Estilos para la seccion de perfiles --/*/
+
+.seccion-perfil{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.25rem;
+}
+
+.info-izquierda{
+    flex: 1;
+    min-width: 12.5rem;
+    text-align: center;
+}
+
+.info-izquierda img{
+    width: 12.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 0.625rem;
+}
+
+.cita-perfil{
+    color: #00bceb;
+    font-family: italic;
+}
+
+.info-derecha{
+    flex: 2;
+    align-content: center;
+    min-width: 15.625rem;
+}
+
+.info-derecha strong{
+    display: block;
+}
+
+#linea-abajo{
+    margin: 0.375rem 0;
+    border-bottom: 1px solid #c5b9b9;
+}
+
+.perfil-invertido{
+    flex-direction: row-reverse;
+}
+
+/* -- Estilos para la seccion final -- */
+
+.seccion-final{
+    text-align: center;
+}
+
+.contenedor-caracteristicas ul{
+    list-style: none;
+    margin-bottom: 3.5rem;
+}
+
+.contenedor-caracteristicas li{
+    margin-top: 1.5rem;
+    margin-right: 2.5rem;
+}
+
+.contenedor-caracteristicas img{
+    width: 5.5rem;
+}
+
+/* -- -- */
+
+.contenedor-estrategia img{
+    width: 5.5rem;
+    margin-right: 0.1rem;
+}
+
+/* Estilos para el contenedor de la lista */
+.lista-alcance {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 1fr;
+    list-style: none; 
+    padding: 0;       
+    margin: 0;       
+
+}
+
+
+.lista-alcance li {
+    padding: 1.25rem; 
+    color: bold; 
+    line-height: 1.4; 
+
+}
+
+/* Posicionamiento específico de cada elemento hijo */
+
+.lista-alcance li:nth-child(1) {
+    grid-column: 1; 
+    grid-row: 1;    
+}
+
+.lista-alcance li:nth-child(2) {
+    grid-column: 2; 
+    grid-row: 1;    
+}
+
+.lista-alcance li:nth-child(3) {
+    grid-column: 1; 
+    grid-row: 2;    
+}
+
+.lista-alcance li:nth-child(4) {
+    grid-column: 2; 
+    grid-row: 2;    
+}
+
+.lista-alcance li:nth-child(5) {
+    grid-column: 3;
+    grid-row: 1 / span 2; /* Comienza en la fila 1 y abarca 2 filas */
+    align-self: center;   
+    justify-self: center; 
+    text-align: center;   
+
+}
+
+/* -- Responsividad -- */
+@media (max-width: 768px) {
+    .lista-alcance {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1.25rem; 
+        max-width: 100%;
+        
+    }
+
+    
+    .lista-alcance li:nth-child(5) {
+        grid-column: 1 / span 2; 
+        grid-row: 3;
+    }
+}
+
+
