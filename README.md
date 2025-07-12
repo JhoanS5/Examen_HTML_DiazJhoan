@@ -1,1 +1,3 @@
-# Examen_HTML_DiazJhoan
+# Aplicativo Web - DIAN
+
+En este proyecto, he sido responsable de implementar el primer flujo de entrada para la página principal del Aplicativo Web de Casos de Estudio de la DIAN. Mi labor se centró en trasladar el wireframe provisto por el equipo de UI/UX a un entorno visual, asegurando un diseño responsive que se adapta óptimamente tanto a dispositivos móviles (específicamente iPhone 14 Pro Max) como a pantallas de escritorio (1080p), garantizando una experiencia de usuario (UI/UX) consistente y eficaz a través de todo el flujo inicial.
